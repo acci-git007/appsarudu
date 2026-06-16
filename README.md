@@ -91,3 +91,45 @@ CREATE TABLE tbabsen (
     }
   ]
 }
+
+
+
+
+
+
+
+
+
+
+
+DATA SISWA
+
+1.CREATE DATABASE dbsiswa;
+
+USE dbsiswa;
+
+CREATE TABLE siswa (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nis VARCHAR(20) NOT NULL,
+    nama VARCHAR(100) NOT NULL,
+    kelas VARCHAR(20) NOT NULL,
+    alamat TEXT,
+    foto VARCHAR(500),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+2.BUCKET POLICY S33
+
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicRead",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::NAMA_BUCKET_S3/*"
+    }
+  ]
+}
