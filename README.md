@@ -77,7 +77,7 @@ CREATE TABLE tbabsen (
 
 
 
-BUCKET POLICY DI S3
+5.BUCKET POLICY DI S3
 
 {
   "Version": "2012-10-17",
